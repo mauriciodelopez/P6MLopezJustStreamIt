@@ -73,8 +73,8 @@ html {
   
 
   
-  .best_movie_title {
-    font-size: 45px;
+  .best-movie-title {
+    font-size: 70px;
   }
   
   .button {
@@ -82,11 +82,12 @@ html {
     width: 120px;
   }
   
-  .best_movie_description p{
+  .best-desc {
     margin-right: 60%;
     margin-top: 3%;
     line-height: 180%;
     font-style: italic;
+    font-size: 150%;
   }
   
   .best-cover img{
