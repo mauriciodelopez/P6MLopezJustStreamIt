@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Juststreamit</title>
+</head>
+<body>
+    <section class="best" id="best-movie">
+        <div class="best-cover" id="top0">
+          <img alt="movie cover">
+        </div>
+        <div class="best_movie">
+          <h1 class="best-movie-title" id="top-title">""</h1>
+        </div>
+        <div class="best-movie-description">
+          <p class="best-desc" id="top-desc">""</p>
+        </div>
+
+        <div class="buttons">
+            <button class="button"><i class="bi bi-play-fill"></i>► Play</button>
+            <button aria-label="open modal" class="button">More info</button>
+          </div>
+      </section>
+
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2>Best-rated movies</h2>
+            <div class="carrousel--container">
+                <div class="carrousel--content" id="best-movies">
+                    <div class="box" id="1">
+                        <img  alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 1</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('',1)">More info</button>
+                        </div>
+                    </div>
+                    <div class="box" id="2">
+                        <img  alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 2</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('', 2)">More info</button>
+                        </div>
+                    </div>
+                    <div class="box" id="3">
+                        <img src="JustStreamIt/images/test.jpg" alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 3</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('', 3)">More info</button>
+                        </div>
+                    </div>
+                    <div class="box" id="4">
+                        <img src="JustStreamIt/images/test.jpg" alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 4</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('', 4)">More info</button>
+                        </div>    
+                    </div>
+                    <div class="box" id="5">
+                        <img src="JustStreamIt/images/test.jpg" alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 5</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('', 5)">More info</button>
+                        </div>
+                    </div>
+                    <div class="box" id="6">
+                        <img src="JustStreamIt/images/test.jpg" alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 6</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('', 6)">More info</button>
+                        </div>
+                    </div>
+                    <div class="box" id="7">
+                        <img src="JustStreamIt/images/test.jpg" alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 7</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('', 7)">More info</button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="controls">
+                    <button class="btn left" id="best-left" onclick="moveCarrouselRight('best')">❰</button>
+                    <button class="btn right show" id="best-right" onclick="moveCarrouselLeft('best')">❱</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2>Music movies</h2>
+            <div class="carrousel--container">
+                <div class="carrousel--content" id="music-movies">
+                    <div class="box" id="music1">
+                        <img  alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 1</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('music', 1)">More info</button>
+                        </div>
+                    </div>
+                    <div class="box" id="music2">
+                        <img  alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 2</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('music', 2)">More info</button>
+                        </div>
+                    </div>
+                    <div class="box" id="music3">
+                        <img  alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 3</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('music', 3)">More info</button>
+                        </div>
+                    </div>
+                    <div class="box" id="music4">
+                        <img alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 4</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('music', 4)">More info</button>
+                        </div>   
+                    </div>
+                    <div class="box" id="music5">
+                        <img  alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 5</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('music', 5)">More info</button>
+                        </div>
+                    </div>
+                    <div class="box" id="music6">
+                        <img  alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 6</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('music', 6)">More info</button>
+                        </div>
+                    </div>
+                    <div class="box" id="music7">
+                        <img alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 7</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('music', 7)">More info</button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="controls">
+                    <button class="btn left" id="music-left" onclick="moveCarrouselRight('music')">❰</button>
+                    <button class="btn right show" id="music-right" onclick="moveCarrouselLeft('music')">❱</button>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section class="categories">
+        <div class="container">
+            <h2>Horror movies</h2>
+            <div class="carrousel--container">
+                <div class="carrousel--content" id="horror-movies">
+                    <div class="box" id="horror1">
+                        <img  alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 1</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('horror', 1)">More info</button>
+                        </div>
+                    </div>
+                    <div class="box" id="horror2">
+                        <img  alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 2</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('horror', 2)">More info</button>
+                        </div>
+                    </div>
+                    <div class="box" id="horror3">
+                        <img  alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 3</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('horror', 3)">More info</button>
+                        </div>
+                    </div>
+                    <div class="box" id="horror4">
+                        <img  alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 4</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('horror', 4)">More info</button>
+                        </div>   
+                    </div>
+                    <div class="box" id="horror5">
+                        <img  alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 5</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('horror', 5)">More info</button>
+                        </div>
+                    </div>
+                    <div class="box" id="horror6">
+                        <img  alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 6</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('horror', 6)">More info</button>
+                        </div>
+                    </div>
+                    <div class="box" id="horror7">
+                        <img  alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 7</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('horror', 7)">More info</button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="controls">
+                    <button class="btn left" id="horror-left" onclick="moveCarrouselRight('horror')">❰</button>
+                    <button class="btn right show" id="horror-right" onclick="moveCarrouselLeft('horror')">❱</button>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section class="categories">
+        <div class="container">
+            <h2>Biography movies</h2>
+            <div class="carrousel--container">
+                <div class="carrousel--content" id="biography-movies">
+                    <div class="box" id="biography1">
+                        <img src="JustStreamIt/images/test.jpg" alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 1</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('biography', 1)">More info</button>
+                        </div>
+                    </div>
+                    <div class="box" id="biography2">
+                        <img src="JustStreamIt/images/test.jpg" alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 2</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('biography', 2)">More info</button>
+                        </div>
+                    </div>
+                    <div class="box" id="biography3">
+                        <img src="JustStreamIt/images/test.jpg" alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 3</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('biography', 3)">More info</button>
+                        </div>
+                    </div>
+                    <div class="box" id="biography4">
+                        <img src="JustStreamIt/images/test.jpg" alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 4</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('biography', 4)">More info</button>
+                        </div>   
+                    </div>
+                    <div class="box" id="biography5">
+                        <img src="JustStreamIt/images/test.jpg" alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 5</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('biography', 5)">More info</button>
+                        </div>
+                    </div>
+                    <div class="box" id="biography6">
+                        <img src="JustStreamIt/images/test.jpg" alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 6</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('biography', 6)">More info</button>
+                        </div>
+                    </div>
+                    <div class="box" id="biography7">
+                        <img src="JustStreamIt/images/test.jpg" alt="movie cover">
+                        <div class= "overlay">
+                            <p>Movie 7</p>
+                            <button class= "overlay_button">► Play</button>
+                            <button class= "overlay_button" onclick="openModal('biography', 7)">More info</button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="controls">
+                    <button class="btn left" id="biography-left" onclick="moveCarrouselRight('biography')">❰</button>
+                    <button class="btn right show" id="biography-right" onclick="moveCarrouselLeft('biography')">❱</button>
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal_cover_image">
+                <img src="JustStreamIt/images/test.jpg" alt="movie cover" id="modal-cover">
+            </div>
+            <div class="modal_movie_info">
+                <header class="modal_header">
+                    <h3 class="title" id="modal-title">""</h3>
+                    <button class="modal_button">► Play</button>
+                </header>
+                <div class="metadata">
+                    <p id="modal-year">""</p>
+                    <p> • </p>
+                    <p id="modal-rating">""</p>
+                    <p> • </p>
+                    <p id="modal-duration">""</p>
+                    <br>
+                    <p class = "genres" id="modal-genres">""</p>
+                    <br>
+                    <strong>IMDb </strong>
+                    <p id="modal-imdb">""</p>
+                    <br>
+                    <br>
+                </div>
+                <strong>Directed by : </strong>
+                    <p id="modal-directors">""</p>
+                    <br>
+                    <strong>Starring : </strong>
+                    <p id="modal-cast">""</p>
+                    <br>
+                    <strong>Countries : </strong>
+                    <p id="modal-country">""</p>
+                    <br>
+                    <strong>Box office : </strong>
+                    <p id="modal-box-office">""</p>
+                    <br>
+                    <br>
+                    <strong>Plot summary : </strong>
+                    <br>
+                    <p class="plot" id="modal-desc">""</p>
+                </div>
+            </div>
+        </div>        
+
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
