@@ -1,5 +1,5 @@
 ## PROJET 6 : Développez une interface utilisateur pour une application web Python
-###Objectifs du projet
+Objectifs du projet
 
 Ce projet est le résultat du projet 6 de la formation développeur application Python. 
 Il consiste à afficher dans un site web les données de films depuis l'API OCMovies.
