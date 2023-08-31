@@ -33,7 +33,7 @@ python app.py
 Le projet est composé de plusieurs fichiers :
 
 * `app.py` : Ce fichier est le point d'entrée du projet. Il importe les dépendances nécessaires et définit les routes de l'application.
-* `templates/index.html` : Ce fichier est le template de la page d'accueil du site web. Il affiche la liste des films récupérés depuis l'API OCMovies.
+* `templates/index.html` : Ce fichier est le template de la page d'accueil du site web. Il affiche la liste des films récupérés depuis l'API OCMovies.https://github.com/OpenClassrooms-Student-Center/OCMovies-API-EN-FR.git
 * `static/css/style.css` : Ce fichier contient les styles CSS du site web.
 * `static/js/script.js` : Ce fichier contient les scripts JavaScript du site web.
 
