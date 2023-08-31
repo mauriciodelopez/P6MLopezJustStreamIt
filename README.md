@@ -1,5 +1,5 @@
  ```# Projet 6 DA-Python OC (Mauricio Lopez)
-
+ ```
 
 Ce projet est le résultat du projet 6 de la formation développeur application Python. 
 Il consiste à afficher dans un site web les données de films depuis l'API OCMovies.
