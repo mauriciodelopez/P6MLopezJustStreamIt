@@ -88,7 +88,7 @@ function fetchCategories(category) {
       const dataAll = dataPage1.concat(dataPage2);
 
       if (category == '')
-        dataAll.shift();   // pour la catégorie la mieux notée, sautez le premier film
+        dataAll.shift();   //sautez le premier film de la catégorie la mieux noté
 
       for (i=0; i<7; i++) {
         const movieCover = dataAll[i]["image_url"];
