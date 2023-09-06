@@ -70,7 +70,6 @@ function moveCarrouselRight(category) {
 }
 
 
-
 function fetchCategories(category) {
 
   const urlPage1 = mainUrl + "?sort_by=-imdb_score&genre=" + category;
