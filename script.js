@@ -4,7 +4,7 @@ const mainUrl = "http://localhost:8000/api/v1/titles/";
 // Best movie
 function fetchBestMovie() {
   let bestTitle = document.getElementById('top-title');
-  let bestImg = document.getElementsByClassName('best-cover')[0].getElementsByTagName("img")[0];
+  let bestImg = document.getElementsByClassName('best-cover')[0].getElementsByTagName("img")[0];//position 0 pour qu'il ferme
   let bestDesc = document.getElementsByClassName('best-desc')[0];
   let bestButton = document.getElementsByClassName('button')[1];
 
@@ -15,7 +15,7 @@ function fetchBestMovie() {
           const bestMovie = data.results[0]; // Extraire le meilleur film
           bestTitle.textContent = bestMovie.title;
           bestImg.src = bestMovie.image_url;
-          bestButton.setAttribute("onclick", `openModal22("${bestMovie.id}")`);
+          bestButton.setAttribute("onclick", `openModal22("${bestMovie.id}")`);//onclick creation fonctionnalité execute instructions
           fetch(data["results"][0]["url"])
                 .then(response => response.json())
                 .then(data => {
@@ -26,12 +26,12 @@ function fetchBestMovie() {
 
 function openModal22(id) {
 
-  let modal = document.getElementById("modal");
+  let modal = document.getElementById("modal");//qui ouvre les bouttons
   let span = document.getElementsByClassName("close")[0];
 
   fetchModalData(id)
 
-  modal.style.display = "block";
+  modal.style.display = "block"; //mode block que se montre à l'ecran
 
   span.onclick = function () {
       modal.style.display = "none";
@@ -150,11 +150,11 @@ function fetchModalData(id) {
     if (typeof data["rated"] === 'string' || data["rated"] instanceof String)
       document.getElementById('modal-rating').innerHTML = data["rated"];
     else
-      document.getElementById('modal-rating').innerHTML = data["rated"] + "+";  // add "+" if age rating is a number
+      document.getElementById('modal-rating').innerHTML = data["rated"] + "+";  // add "+" si age rating c'est un numéro
 
     const modalBoxOffice = document.getElementById('modal-box-office');
     if (data["worldwide_gross_income"] == null)
-      modalBoxOffice.innerHTML = "N/A";  // placeholder for unspecified box-office   
+      modalBoxOffice.innerHTML = "N/A";  // espace réservé pour un box-office non spécifié  
     else 
       modalBoxOffice.innerHTML = data["worldwide_gross_income"] + " " + data["budget_currency"];
 
